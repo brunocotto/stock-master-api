@@ -98,7 +98,6 @@ app.UseMiddleware<CultureMiddleaware>();
 
 app.UseHttpsRedirection();
 
-// Enable CORS
 app.UseCors("AllowSpecificOrigin");
 
 app.UseAuthentication();
@@ -110,10 +109,8 @@ await MigrateDatabase();
 
 app.Run();
 
-// função para automatizar o processo de inserção das migrations no banco
 async Task MigrateDatabase()
 {
     await using var scope = app.Services.CreateAsyncScope();
-    // passo o provedor de services para que seja possível acessar CashFlowDbContext
     await DatabaseMigration.MigrationDatabase(scope.ServiceProvider); 
 }

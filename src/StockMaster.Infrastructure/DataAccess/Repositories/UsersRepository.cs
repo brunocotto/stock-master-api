@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace StockMaster.Infrastructure.DataAccess.Repositories;
 
-internal class UserRepository(StockMasterDbContext dbContext) : IUserReadOnlyRepository, IUserWriteOnlyRepository, IUserUpdateOnlyRepository
+internal class UsersRepository(StockMasterDbContext dbContext) : IUserReadOnlyRepository, IUserWriteOnlyRepository, IUserUpdateOnlyRepository
 {
     private readonly StockMasterDbContext _dbContext = dbContext;
 
@@ -15,7 +15,6 @@ internal class UserRepository(StockMasterDbContext dbContext) : IUserReadOnlyRep
 
     public async Task Delete(User user)
     {
-        // CASCADA automático - OnDelete na migration
         var userToRemove = await _dbContext.Users.FindAsync(user.Id);
         _dbContext.Users.Remove(userToRemove!);
     }
