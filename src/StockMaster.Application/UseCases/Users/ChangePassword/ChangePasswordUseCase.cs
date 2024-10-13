@@ -1,5 +1,4 @@
 using StockMaster.Application.UseCases.Users.Update;
-using StockMaster.Communication.Requests;
 using StockMaster.Domain.Repositories;
 using StockMaster.Domain.Repositories.User;
 using StockMaster.Domain.Security.Cryptography;
@@ -7,6 +6,7 @@ using StockMaster.Domain.Services.LoggedUser;
 using StockMaster.Exception.ExceptionsBase;
 using StockMaster.Exception;
 using FluentValidation.Results;
+using StockMaster.Communication.Requests.Users;
 
 namespace StockMaster.Application.UseCases.Users.ChangePassword;
 

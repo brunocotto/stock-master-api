@@ -1,6 +1,6 @@
-using StockMaster.Communication.Requests;
 using StockMaster.Exception;
 using FluentValidation;
+using StockMaster.Communication.Requests.Users;
 
 namespace StockMaster.Application.UseCases.Users.ChangePassword;
 

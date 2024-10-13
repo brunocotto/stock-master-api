@@ -1,4 +1,4 @@
-using StockMaster.Communication.Requests;
+using StockMaster.Communication.Requests.Users;
 using StockMaster.Communication.Responses;
 using StockMaster.Domain.Repositories.User;
 using StockMaster.Domain.Security.Cryptography;

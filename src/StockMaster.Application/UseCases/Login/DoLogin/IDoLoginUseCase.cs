@@ -1,4 +1,4 @@
-﻿using StockMaster.Communication.Requests;
+﻿using StockMaster.Communication.Requests.Users;
 using StockMaster.Communication.Responses;
 
 namespace StockMaster.Application.UseCases.Login.DoLogin;

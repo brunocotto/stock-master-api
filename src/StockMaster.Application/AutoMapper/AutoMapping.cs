@@ -1,5 +1,6 @@
 using AutoMapper;
-using StockMaster.Communication.Requests;
+using StockMaster.Communication.Requests.Categories;
+using StockMaster.Communication.Requests.Users;
 using StockMaster.Communication.Responses;
 using StockMaster.Domain.Entities;
 
@@ -16,6 +17,7 @@ public class AutoMapping : Profile
     {   
         CreateMap<RequestRegisterUserJson, User>()
             .ForMember(dest => dest.Password, config => config.Ignore());
+        CreateMap<RequestRegisterCategoryJson, Category>();
     }
 
     private void EntityToResponse()

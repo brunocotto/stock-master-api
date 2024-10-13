@@ -1,5 +1,4 @@
 using AutoMapper;
-using StockMaster.Communication.Requests;
 using StockMaster.Communication.Responses;
 using StockMaster.Domain.Repositories;
 using StockMaster.Domain.Repositories.User;
@@ -8,6 +7,7 @@ using StockMaster.Domain.Security.Tokens;
 using StockMaster.Exception;
 using StockMaster.Exception.ExceptionsBase;
 using FluentValidation.Results;
+using StockMaster.Communication.Requests.Users;
 
 namespace StockMaster.Application.UseCases.Users.Register;
 

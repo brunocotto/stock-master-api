@@ -1,5 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using StockMaster.Application.AutoMapper;
+using StockMaster.Application.UseCases.Categories.Register;
 using StockMaster.Application.UseCases.Login.DoLogin;
 using StockMaster.Application.UseCases.Users.ChangePassword;
 using StockMaster.Application.UseCases.Users.Delete;
@@ -27,7 +28,9 @@ public static class DependecyInjectionExtension
         services.AddScoped<IDoLoginUseCase, DoLoginUseCase>();
         services.AddScoped<IGetUserProfileUseCase, GetUserProfileUseCase>();   
         services.AddScoped<IUpdateUserUseCase, UpdateUserUseCase>();   
-        services.AddScoped<IChangePasswordUseCase, ChangePasswordUseCase>();   
-        services.AddScoped<IDeleteProfileUseCase, DeleteProfileUseCase>();   
+        services.AddScoped<IChangePasswordUseCase, ChangePasswordUseCase>();
+        services.AddScoped<IDeleteProfileUseCase, DeleteProfileUseCase>();
+
+        services.AddScoped<IRegisterCategoryUseCase, RegisterCategoryUseCase>();
     }
 }

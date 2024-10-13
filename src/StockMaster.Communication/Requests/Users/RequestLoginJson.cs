@@ -1,4 +1,4 @@
-namespace StockMaster.Communication.Requests;
+namespace StockMaster.Communication.Requests.Users;
 
 public class RequestLoginJson
 {

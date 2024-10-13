@@ -20,13 +20,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="UseCases\Categories\" />
     <Folder Include="UseCases\Customers\" />
+    <Folder Include="UseCases\Products\" />
     <Folder Include="UseCases\StockMovements\" />
     <Folder Include="UseCases\SalesOrders\" />
     <Folder Include="UseCases\OrderItems\" />
     <Folder Include="UseCases\Suppliers\" />
-    <Folder Include="UseCases\Products\" />
   </ItemGroup>
 
 </Project>

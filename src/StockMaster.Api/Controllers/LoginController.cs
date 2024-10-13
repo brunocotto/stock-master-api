@@ -1,11 +1,11 @@
 ﻿using StockMaster.Application.UseCases.Login.DoLogin;
-using StockMaster.Communication.Requests;
 using StockMaster.Communication.Responses;
 using Microsoft.AspNetCore.Mvc;
+using StockMaster.Communication.Requests.Users;
 
 namespace StockMaster.Api.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/login")]
 [ApiController]
 public class LoginController : ControllerBase
 {

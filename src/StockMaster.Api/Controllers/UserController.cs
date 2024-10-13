@@ -1,17 +1,16 @@
-﻿using StockMaster.Application.UseCases.Users.ChangePassword;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using StockMaster.Application.UseCases.Users.ChangePassword;
 using StockMaster.Application.UseCases.Users.Delete;
 using StockMaster.Application.UseCases.Users.Profile;
 using StockMaster.Application.UseCases.Users.Register;
 using StockMaster.Application.UseCases.Users.Update;
-using StockMaster.Communication.Requests;
+using StockMaster.Communication.Requests.Users;
 using StockMaster.Communication.Responses;
-using DocumentFormat.OpenXml.Office2016.Excel;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 
 namespace StockMaster.Api.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/users")]
 [ApiController]
 public class UserController : ControllerBase
 {

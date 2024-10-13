@@ -1,10 +1,10 @@
-using StockMaster.Communication.Requests;
 using StockMaster.Domain.Repositories;
 using StockMaster.Domain.Repositories.User;
 using StockMaster.Domain.Services.LoggedUser;
 using StockMaster.Exception;
 using StockMaster.Exception.ExceptionsBase;
 using FluentValidation.Results;
+using StockMaster.Communication.Requests.Users;
 
 namespace StockMaster.Application.UseCases.Users.Update;
 
