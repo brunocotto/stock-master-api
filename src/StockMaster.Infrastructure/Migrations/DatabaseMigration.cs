@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using StockMaster.Infrastructure.DataAccess;
 
-namespace CashFlow.Infrastructure.Migrations;
+namespace StockMaster.Infrastructure.Migrations;
 
 public class DatabaseMigration
 {

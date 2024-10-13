@@ -10,5 +10,5 @@ public class SalesOrder
 
     public long CustomerId { get; set; }
     public required Customer Customer { get; set; }
-    public required List<OrderItem> OrderItems { get; set; }
+    public ICollection<OrderItem> OrderItems { get; set; } = [];
 }

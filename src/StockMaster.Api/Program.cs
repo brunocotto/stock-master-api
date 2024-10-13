@@ -1,4 +1,3 @@
-using CashFlow.Infrastructure.Migrations;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -8,6 +7,7 @@ using StockMaster.Api.Token;
 using StockMaster.Application;
 using StockMaster.Domain.Security.Tokens;
 using StockMaster.Infrastructure;
+using StockMaster.Infrastructure.Migrations;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);

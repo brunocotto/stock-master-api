@@ -9,11 +9,6 @@
   <ItemGroup>
     <Compile Remove="DataAccess\CashFlowDbContext.cs" />
     <Compile Remove="DataAccess\Repositories\ExpensesRepository.cs" />
-    <Compile Remove="Migrations\20240714130444_InitialMigration.cs" />
-    <Compile Remove="Migrations\20240714130444_InitialMigration.Designer.cs" />
-    <Compile Remove="Migrations\20240721001220_TagsIntoExpenses.cs" />
-    <Compile Remove="Migrations\20240721001220_TagsIntoExpenses.Designer.cs" />
-    <Compile Remove="Migrations\CashFlowDbContextModelSnapshot.cs" />
   </ItemGroup>
 
   <ItemGroup>

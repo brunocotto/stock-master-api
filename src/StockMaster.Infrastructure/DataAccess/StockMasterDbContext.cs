@@ -16,16 +16,6 @@ internal class StockMasterDbContext: DbContext
     public DbSet<StockMovement> StockMovements { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Product>()
-        .HasOne(p => p.Category)
-        .WithMany(c => c.Products)
-        .HasForeignKey(p => p.CategoryId);
-
-        modelBuilder.Entity<Product>()
-            .HasOne(p => p.Supplier)
-            .WithMany(s => s.Products)
-            .HasForeignKey(p => p.SupplierId);
-
         base.OnModelCreating(modelBuilder);
     }
 
