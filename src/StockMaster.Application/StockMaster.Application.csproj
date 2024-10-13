@@ -25,7 +25,6 @@
     <Folder Include="UseCases\StockMovements\" />
     <Folder Include="UseCases\SalesOrders\" />
     <Folder Include="UseCases\OrderItems\" />
-    <Folder Include="UseCases\Suppliers\" />
   </ItemGroup>
 
 </Project>

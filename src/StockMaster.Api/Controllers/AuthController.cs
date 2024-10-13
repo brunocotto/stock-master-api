@@ -5,9 +5,9 @@ using StockMaster.Communication.Requests.Users;
 
 namespace StockMaster.Api.Controllers;
 
-[Route("api/login")]
+[Route("api/auth/login")]
 [ApiController]
-public class LoginController : ControllerBase
+public class AuthController : ControllerBase
 {
     [HttpPost]
     [ProducesResponseType(typeof(ResponseRegisteredUserJson), StatusCodes.Status200OK)]

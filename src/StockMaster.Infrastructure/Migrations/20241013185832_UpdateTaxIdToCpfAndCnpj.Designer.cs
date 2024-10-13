@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StockMaster.Infrastructure.DataAccess;
 
@@ -11,9 +12,11 @@ using StockMaster.Infrastructure.DataAccess;
 namespace StockMaster.Infrastructure.Migrations
 {
     [DbContext(typeof(StockMasterDbContext))]
-    partial class StockMasterDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241013185832_UpdateTaxIdToCpfAndCnpj")]
+    partial class UpdateTaxIdToCpfAndCnpj
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

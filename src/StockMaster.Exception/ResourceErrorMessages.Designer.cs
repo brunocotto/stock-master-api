@@ -61,6 +61,33 @@ namespace StockMaster.Exception {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The adress is required..
+        /// </summary>
+        public static string ADRESS_REQUIRED {
+            get {
+                return ResourceManager.GetString("ADRESS_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The cnpj is required..
+        /// </summary>
+        public static string CNPJ_REQUIRED {
+            get {
+                return ResourceManager.GetString("CNPJ_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The contact is required..
+        /// </summary>
+        public static string CONTACT_REQUIRED {
+            get {
+                return ResourceManager.GetString("CONTACT_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The description is required..
         /// </summary>
         public static string DESCRIPTION_REQUIRED {
@@ -129,6 +156,15 @@ namespace StockMaster.Exception {
         public static string PASSWORD_DIFFERENT_CURRENT_PASSWORD {
             get {
                 return ResourceManager.GetString("PASSWORD_DIFFERENT_CURRENT_PASSWORD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The phone is required..
+        /// </summary>
+        public static string PHONE_REQUIRED {
+            get {
+                return ResourceManager.GetString("PHONE_REQUIRED", resourceCulture);
             }
         }
         
