@@ -132,6 +132,12 @@
   <data name="CONTACT_REQUIRED" xml:space="preserve">
     <value>The contact is required.</value>
   </data>
+  <data name="CPF_FORMAT_INVALID" xml:space="preserve">
+    <value>CPF must be in the format XXX.XXX.XXX-XX.</value>
+  </data>
+  <data name="CPF_REQUIRED" xml:space="preserve">
+    <value>The cpf is required.</value>
+  </data>
   <data name="DESCRIPTION_REQUIRED" xml:space="preserve">
     <value>The description is required.</value>
   </data>

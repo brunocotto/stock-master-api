@@ -2,6 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using StockMaster.Application.AutoMapper;
 using StockMaster.Application.UseCases.Categories.GetById;
 using StockMaster.Application.UseCases.Categories.Register;
+using StockMaster.Application.UseCases.Customers.Register;
 using StockMaster.Application.UseCases.Login.DoLogin;
 using StockMaster.Application.UseCases.Products.Register;
 using StockMaster.Application.UseCases.Suppliers.GetById;
@@ -42,5 +43,7 @@ public static class DependecyInjectionExtension
         services.AddScoped<IGetSupplierByIdUseCase, GetSupplierByIdUseCase>();
 
         services.AddScoped<IRegisterProductUseCase, RegisterProductUseCase>();
+
+        services.AddScoped<IRegisterCustomerUseCase, RegisterCustomerUseCase>();
     }
 }

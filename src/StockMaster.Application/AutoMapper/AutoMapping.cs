@@ -1,5 +1,6 @@
 using AutoMapper;
 using StockMaster.Communication.Requests.Categories;
+using StockMaster.Communication.Requests.Customers;
 using StockMaster.Communication.Requests.Products;
 using StockMaster.Communication.Requests.Suppliers;
 using StockMaster.Communication.Requests.Users;
@@ -21,6 +22,7 @@ public class AutoMapping : Profile
     {   
         CreateMap<RequestRegisterUserJson, User>()
             .ForMember(dest => dest.Password, config => config.Ignore());
+        CreateMap<RequestRegisterCustomerJson, Customer>();
         CreateMap<RequestRegisterCategoryJson, Category>();
         CreateMap<RequestRegisterSupplierJson, Supplier>();
         CreateMap<RequestRegisterProductJson, Product>();

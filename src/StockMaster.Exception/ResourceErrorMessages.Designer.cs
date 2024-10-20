@@ -106,6 +106,24 @@ namespace StockMaster.Exception {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CPF must be in the format XXX.XXX.XXX-XX..
+        /// </summary>
+        public static string CPF_FORMAT_INVALID {
+            get {
+                return ResourceManager.GetString("CPF_FORMAT_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The cpf is required..
+        /// </summary>
+        public static string CPF_REQUIRED {
+            get {
+                return ResourceManager.GetString("CPF_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The description is required..
         /// </summary>
         public static string DESCRIPTION_REQUIRED {
