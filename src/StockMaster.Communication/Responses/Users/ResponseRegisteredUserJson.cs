@@ -1,4 +1,4 @@
-namespace StockMaster.Communication.Responses;
+namespace StockMaster.Communication.Responses.Users;
 
 public class ResponseRegisteredUserJson
 {

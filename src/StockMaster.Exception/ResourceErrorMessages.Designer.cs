@@ -70,6 +70,24 @@ namespace StockMaster.Exception {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The barcode is required..
+        /// </summary>
+        public static string BARCODE_REQUIRED {
+            get {
+                return ResourceManager.GetString("BARCODE_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category not a foud..
+        /// </summary>
+        public static string CATEGORY_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("CATEGORY_NOT_FOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The cnpj is required..
         /// </summary>
         public static string CNPJ_REQUIRED {
@@ -133,6 +151,15 @@ namespace StockMaster.Exception {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Expiry date must be a future date..
+        /// </summary>
+        public static string EXPIRY_DATE_VALIDATION_INVALID {
+            get {
+                return ResourceManager.GetString("EXPIRY_DATE_VALIDATION_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Your password must be at least 8 characters long, containing at least one saved letter, one lowercase letter, one number and one special character (!, #, @, ?)..
         /// </summary>
         public static string INVALID_PASSWORD {
@@ -165,6 +192,33 @@ namespace StockMaster.Exception {
         public static string PHONE_REQUIRED {
             get {
                 return ResourceManager.GetString("PHONE_REQUIRED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Purchase price must be greater than or equal to 0..
+        /// </summary>
+        public static string PURCHASE_PRICE_INVALID {
+            get {
+                return ResourceManager.GetString("PURCHASE_PRICE_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stock quantity must be greater than or equal to 0..
+        /// </summary>
+        public static string STOCK_QUANTITY_INVALID {
+            get {
+                return ResourceManager.GetString("STOCK_QUANTITY_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supplier not a found..
+        /// </summary>
+        public static string SUPPLIER_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("SUPPLIER_NOT_FOUND", resourceCulture);
             }
         }
         

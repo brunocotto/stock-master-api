@@ -1,5 +1,5 @@
 using AutoMapper;
-using StockMaster.Communication.Responses;
+using StockMaster.Communication.Responses.Users;
 using StockMaster.Domain.Services.LoggedUser;
 
 namespace StockMaster.Application.UseCases.Users.Profile;

@@ -1,4 +1,4 @@
-﻿using StockMaster.Communication.Responses;
+﻿using StockMaster.Communication.Responses.Users;
 
 namespace StockMaster.Application.UseCases.Users.Profile;
 public interface IGetUserProfileUseCase

@@ -6,7 +6,8 @@ using StockMaster.Application.UseCases.Users.Profile;
 using StockMaster.Application.UseCases.Users.Register;
 using StockMaster.Application.UseCases.Users.Update;
 using StockMaster.Communication.Requests.Users;
-using StockMaster.Communication.Responses;
+using StockMaster.Communication.Responses.Exceptions;
+using StockMaster.Communication.Responses.Users;
 
 namespace StockMaster.Api.Controllers;
 

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using StockMaster.Communication.Responses;
+using StockMaster.Communication.Responses.Exceptions;
 using StockMaster.Exception;
 using StockMaster.Exception.ExceptionsBase;
 

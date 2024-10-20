@@ -1,7 +1,8 @@
 ﻿using StockMaster.Application.UseCases.Login.DoLogin;
-using StockMaster.Communication.Responses;
 using Microsoft.AspNetCore.Mvc;
 using StockMaster.Communication.Requests.Users;
+using StockMaster.Communication.Responses.Users;
+using StockMaster.Communication.Responses.Exceptions;
 
 namespace StockMaster.Api.Controllers;
 

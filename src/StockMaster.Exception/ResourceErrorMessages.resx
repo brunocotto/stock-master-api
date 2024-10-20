@@ -120,6 +120,12 @@
   <data name="ADRESS_REQUIRED" xml:space="preserve">
     <value>The adress is required.</value>
   </data>
+  <data name="BARCODE_REQUIRED" xml:space="preserve">
+    <value>The barcode is required.</value>
+  </data>
+  <data name="CATEGORY_NOT_FOUND" xml:space="preserve">
+    <value>Category not a foud.</value>
+  </data>
   <data name="CNPJ_REQUIRED" xml:space="preserve">
     <value>The cnpj is required.</value>
   </data>
@@ -141,6 +147,9 @@
   <data name="EMAIL_REQUIRED" xml:space="preserve">
     <value>The email is required.</value>
   </data>
+  <data name="EXPIRY_DATE_VALIDATION_INVALID" xml:space="preserve">
+    <value>Expiry date must be a future date.</value>
+  </data>
   <data name="INVALID_PASSWORD" xml:space="preserve">
     <value>Your password must be at least 8 characters long, containing at least one saved letter, one lowercase letter, one number and one special character (!, #, @, ?).</value>
   </data>
@@ -152,6 +161,15 @@
   </data>
   <data name="PHONE_REQUIRED" xml:space="preserve">
     <value>The phone is required.</value>
+  </data>
+  <data name="PURCHASE_PRICE_INVALID" xml:space="preserve">
+    <value>Purchase price must be greater than or equal to 0.</value>
+  </data>
+  <data name="STOCK_QUANTITY_INVALID" xml:space="preserve">
+    <value>Stock quantity must be greater than or equal to 0.</value>
+  </data>
+  <data name="SUPPLIER_NOT_FOUND" xml:space="preserve">
+    <value>Supplier not a found.</value>
   </data>
   <data name="UNKNOWN_ERROR" xml:space="preserve">
     <value>Unknown error</value>

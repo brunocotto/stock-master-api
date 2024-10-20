@@ -1,5 +1,5 @@
 using StockMaster.Communication.Requests.Users;
-using StockMaster.Communication.Responses;
+using StockMaster.Communication.Responses.Users;
 using StockMaster.Domain.Repositories.User;
 using StockMaster.Domain.Security.Cryptography;
 using StockMaster.Domain.Security.Tokens;

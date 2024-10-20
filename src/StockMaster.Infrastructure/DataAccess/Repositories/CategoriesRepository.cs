@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using StockMaster.Domain.Entities;
 using StockMaster.Domain.Repositories.Category;
 
@@ -9,5 +10,12 @@ internal class CategoriesRepository(StockMasterDbContext dbContext) : ICategoryW
     public async Task Add(Category category)
     {
         await _dbContext.Categories.AddAsync(category);
+    }
+
+    public async Task<Category?> GetById(long id)
+    {
+        return await _dbContext.Categories
+            .AsNoTracking()
+            .FirstOrDefaultAsync(c => c.Id == id);
     }
 }
