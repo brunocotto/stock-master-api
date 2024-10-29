@@ -1,8 +1,9 @@
 namespace StockMaster.Domain.Enums;
 
-public enum SalesOrderStatuscs
+public enum OrderStatusEnum
 {
     Pending,
+    Processing,
     Completed,
     Cancelled
 }
