@@ -25,11 +25,11 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/src/StockMaster.Api
+        run: dotnet publish -c Release
 
       - name: Create appsettings.Production.json from secret
         run: |
-          echo "$APPSETTINGS_PRODUCTION" > src/StockMaster.Api/appsettings.Production.json
+          echo "$APPSETTINGS_PRODUCTION" > bin/Release/net8.0/appsettings.Production.json
         env:
           APPSETTINGS_PRODUCTION: ${{ secrets.APPSETTINGS_PRODUCTION }}
           
@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/src/StockMaster.Api
+          path: ${{env.DOTNET_ROOT}}/bin/Release/net8.0
 
   deploy:
     runs-on: ubuntu-latest
