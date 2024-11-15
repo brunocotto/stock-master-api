@@ -39,4 +39,3 @@ StockMaster is a simple, lightweight stock management system that allows busines
  ┣ 📂StockMaster.Application    # Application Layer - Use cases, services
  ┣ 📂StockMaster.Domain         # Domain Layer - Entities, Enums, Repositories
  ┣ 📂StockMaster.Infrastructure # Infrastructure Layer - Data access, EF configurations
- ┣ 📂StockMaster.Tests          # Unit Tests for the project
