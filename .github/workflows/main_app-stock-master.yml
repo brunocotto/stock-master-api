@@ -29,7 +29,7 @@ jobs:
 
       - name: Create appsettings.Production.json from secret
         run: |
-          echo "$APPSETTINGS_PRODUCTION" > ${{ env.DOTNET_ROOT }}/myapp/appsettings.Production.json
+          echo "$APPSETTINGS_PRODUCTION" > ${{ env.DOTNET_ROOT }}/myapp/src/StockMaster.Api/appsettings.Production.json
         env:
           APPSETTINGS_PRODUCTION: ${{ secrets.APPSETTINGS_PRODUCTION }}
           
