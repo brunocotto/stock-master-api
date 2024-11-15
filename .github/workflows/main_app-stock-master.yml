@@ -27,9 +27,11 @@ jobs:
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
-      - name: Create appsettings.Production.json
+      - name: Create appsettings.Production.json from secret
         run: |
-          printf "%s" "${{ secrets.APPSETTINGS_PRODUCTION }}" > ${{ env.DOTNET_ROOT }}/myapp/appsettings.Production.json
+          echo "$APPSETTINGS_PRODUCTION" > ${{ env.DOTNET_ROOT }}/myapp/appsettings.Production.json
+        env:
+          APPSETTINGS_PRODUCTION: ${{ secrets.APPSETTINGS_PRODUCTION }}
           
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
