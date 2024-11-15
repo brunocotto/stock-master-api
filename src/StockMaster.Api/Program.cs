@@ -74,15 +74,14 @@ builder.Services.AddAuthentication(config =>
     };
 });
 
-// Configure CORS to allow specific origin and credentials
+// Configure CORS to allow any origin
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowSpecificOrigin", builder =>
+    options.AddPolicy("AllowAnyOrigin", builder =>
     {
-        builder.WithOrigins("http://localhost:5173")
+        builder.AllowAnyOrigin()
                .AllowAnyMethod()
-               .AllowAnyHeader()
-               .AllowCredentials();
+               .AllowAnyHeader();
     });
 });
 
@@ -98,9 +97,10 @@ app.UseMiddleware<CultureMiddleaware>();
 
 app.UseHttpsRedirection();
 
-app.UseCors("AllowSpecificOrigin");
+app.UseCors("AllowAnyOrigin");
 
 app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapControllers();
