@@ -5,12 +5,6 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2D3998D0-D468-471D-90B4-F2B6D654B47B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B3349502-FFC6-41DD-BEC5-8EA07E0B6C4C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validators.Tests", "tests\Validators.Tests\Validators.Tests.csproj", "{AA57D253-C418-4C56-AB0F-3A1E9D5146EE}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonTestUtilities", "tests\CommonTestUtilities\CommonTestUtilities.csproj", "{4378588C-CFFA-4726-829F-CB55AB2C5D81}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockMaster.Api", "src\StockMaster.Api\StockMaster.Api.csproj", "{EFCE21E9-B805-4153-A23E-C570F3F33C0B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockMaster.Application", "src\StockMaster.Application\StockMaster.Application.csproj", "{18D8EF4B-68FF-47CA-886D-1FD8A0DBEFD8}"
@@ -29,14 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AA57D253-C418-4C56-AB0F-3A1E9D5146EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA57D253-C418-4C56-AB0F-3A1E9D5146EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA57D253-C418-4C56-AB0F-3A1E9D5146EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA57D253-C418-4C56-AB0F-3A1E9D5146EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4378588C-CFFA-4726-829F-CB55AB2C5D81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4378588C-CFFA-4726-829F-CB55AB2C5D81}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4378588C-CFFA-4726-829F-CB55AB2C5D81}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4378588C-CFFA-4726-829F-CB55AB2C5D81}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EFCE21E9-B805-4153-A23E-C570F3F33C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EFCE21E9-B805-4153-A23E-C570F3F33C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFCE21E9-B805-4153-A23E-C570F3F33C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -66,8 +52,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{AA57D253-C418-4C56-AB0F-3A1E9D5146EE} = {B3349502-FFC6-41DD-BEC5-8EA07E0B6C4C}
-		{4378588C-CFFA-4726-829F-CB55AB2C5D81} = {B3349502-FFC6-41DD-BEC5-8EA07E0B6C4C}
 		{EFCE21E9-B805-4153-A23E-C570F3F33C0B} = {2D3998D0-D468-471D-90B4-F2B6D654B47B}
 		{18D8EF4B-68FF-47CA-886D-1FD8A0DBEFD8} = {2D3998D0-D468-471D-90B4-F2B6D654B47B}
 		{8C1EB452-02C0-4D98-BFD2-48677877A907} = {2D3998D0-D468-471D-90B4-F2B6D654B47B}
