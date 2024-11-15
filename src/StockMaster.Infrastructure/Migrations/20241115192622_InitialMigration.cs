@@ -40,7 +40,7 @@ namespace StockMaster.Infrastructure.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    TaxId = table.Column<string>(type: "longtext", nullable: false)
+                    Cpf = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Address = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -67,7 +67,7 @@ namespace StockMaster.Infrastructure.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Address = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    TaxID = table.Column<string>(type: "longtext", nullable: false)
+                    Cnpj = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Phone = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -109,7 +109,10 @@ namespace StockMaster.Infrastructure.Migrations
                     Id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     OrderDate = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    Status = table.Column<int>(type: "int", nullable: false),
+                    OrderStatus = table.Column<int>(type: "int", nullable: false),
+                    OrderType = table.Column<int>(type: "int", nullable: false),
+                    TotalAmount = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
+                    OrderUpdatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     CustomerId = table.Column<long>(type: "bigint", nullable: false)
                 },
                 constraints: table =>
@@ -167,10 +170,9 @@ namespace StockMaster.Infrastructure.Migrations
                 {
                     Id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Quantity = table.Column<int>(type: "int", nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
                     ProductId = table.Column<long>(type: "bigint", nullable: false),
-                    SalesOrderId = table.Column<long>(type: "bigint", nullable: true)
+                    Quantity = table.Column<int>(type: "int", nullable: false),
+                    OrderId = table.Column<long>(type: "bigint", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -182,8 +184,8 @@ namespace StockMaster.Infrastructure.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_OrderItems_SalesOrders_SalesOrderId",
-                        column: x => x.SalesOrderId,
+                        name: "FK_OrderItems_SalesOrders_OrderId",
+                        column: x => x.OrderId,
                         principalTable: "SalesOrders",
                         principalColumn: "Id");
                 })
@@ -214,14 +216,14 @@ namespace StockMaster.Infrastructure.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateIndex(
+                name: "IX_OrderItems_OrderId",
+                table: "OrderItems",
+                column: "OrderId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_OrderItems_ProductId",
                 table: "OrderItems",
                 column: "ProductId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_OrderItems_SalesOrderId",
-                table: "OrderItems",
-                column: "SalesOrderId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Products_CategoryId",

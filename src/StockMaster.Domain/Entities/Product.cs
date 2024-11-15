@@ -13,8 +13,8 @@ public class Product
     
 
     public long CategoryId { get; set; }
-    public required Category Category { get; set; }
+    public Category Category { get; set; } = default!;
     public long SupplierId { get; set; }
-    public required Supplier Supplier { get; set; }
+    public Supplier Supplier { get; set; } = default!;
 }
 

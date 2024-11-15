@@ -11,6 +11,6 @@ public class StockMovement
     public MovementReason MovementReason { get; set; }
 
     public long ProductId { get; set; }
-    public required Product Product { get; set; }
+    public Product Product { get; set; } = default!;
 }
 
