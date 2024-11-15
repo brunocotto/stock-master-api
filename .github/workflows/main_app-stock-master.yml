@@ -25,13 +25,17 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release
+        run: dotnet publish -c Release -o ./bin/Release/net8.0/publish
 
       - name: Create appsettings.Production.json from secret
         run: |
-          echo "$APPSETTINGS_PRODUCTION" > src/StockMaster.Api/bin/Release/net8.0/publish/appsettings.Production.json
+          mkdir -p ./bin/Release/net8.0/publish
+          echo "$APPSETTINGS_PRODUCTION" > ./bin/Release/net8.0/publish/appsettings.Production.json
         env:
           APPSETTINGS_PRODUCTION: ${{ secrets.APPSETTINGS_PRODUCTION }}
+
+      - name: List publish directory
+        run: ls -lR ./bin/Release/net8.0/publish
           
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
