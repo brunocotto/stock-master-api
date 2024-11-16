@@ -8,7 +8,6 @@ StockMaster is a simple, lightweight stock management system that allows busines
 - **Supplier Management**: Maintain a list of suppliers, including contact details, tax ID, and more.
 - **Customer Management**: Manage customer data such as name, contact information, and address.
 - **Sales Orders**: Track customer orders and update the status of sales (pending, completed).
-- **Stock Movements**: Log product movements (inbound and outbound) and track stock levels in real-time.
 
 ## Technologies Used
 
