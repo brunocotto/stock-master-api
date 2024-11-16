@@ -106,12 +106,12 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-await MigrateDatabase();
+// await MigrateDatabase();
 
 app.Run();
 
-async Task MigrateDatabase()
+/*async Task MigrateDatabase()
 {
     await using var scope = app.Services.CreateAsyncScope();
     await DatabaseMigration.MigrationDatabase(scope.ServiceProvider); 
-}
+}*/
