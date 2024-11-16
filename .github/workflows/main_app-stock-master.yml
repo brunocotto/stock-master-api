@@ -25,7 +25,7 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish ./StockMaster.sln -c Release -o ./bin/Release/net8.0/publish
+        run: dotnet publish -c Release -o ./bin/Release/net8.0/publish -self-contained --runtime linux-x64
 
       - name: Create appsettings.Production.json from secret
         run: |
