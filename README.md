@@ -35,6 +35,7 @@ StockMaster is a simple, lightweight stock management system that allows busines
 
 📦StockMaster
  ┣ 📂StockMaster.Api            # API Layer - Controllers, Middlewares, DTOs
- ┣ 📂StockMaster.Application    # Application Layer - Use cases, services
+  ┣ 📂StockMaster.Application    # Application Layer - Use cases, services
+ ┣ 📂StockMaster.Communication    # Application Layer
  ┣ 📂StockMaster.Domain         # Domain Layer - Entities, Enums, Repositories
  ┣ 📂StockMaster.Infrastructure # Infrastructure Layer - Data access, EF configurations
