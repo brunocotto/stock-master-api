@@ -15,6 +15,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+
+//Acessado atravÃ©s do mÃ©todo de extensÃ£o criado em DependecyInjectionExtension
+builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddApplication();
+
 builder.Services.AddSwaggerGen(config =>
 {
     config.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -47,10 +52,6 @@ builder.Services.AddSwaggerGen(config =>
 });
 
 builder.Services.AddMvc(optins => optins.Filters.Add(typeof(ExceptionFilter)));
-
-//Acessado através do método de extensão criado em DependecyInjectionExtension
-builder.Services.AddInfrastructure(builder.Configuration);
-builder.Services.AddApplication();
 
 builder.Services.AddScoped<ITokenProvider, HttpContextTokenValue>();
 
