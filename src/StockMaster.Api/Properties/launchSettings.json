@@ -16,7 +16,10 @@
       "launchUrl": "swagger",
       "applicationUrl": "http://localhost:5291",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "DOTNET_PRINT_TELEMETRY_MESSAGE": "false",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Logging__LogLevel__Default": "Debug",
+        "Logging__LogLevel__Microsoft": "Information"
       }
     },
     "https": {
@@ -26,7 +29,10 @@
       "launchUrl": "swagger",
       "applicationUrl": "https://localhost:7133",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "DOTNET_PRINT_TELEMETRY_MESSAGE": "false",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Logging__LogLevel__Default": "Debug",
+        "Logging__LogLevel__Microsoft": "Information"
       }
     },
     "IIS Express": {
@@ -34,7 +40,10 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DOTNET_PRINT_TELEMETRY_MESSAGE": "false",
+        "Logging__LogLevel__Default": "Debug",
+        "Logging__LogLevel__Microsoft": "Information"
       }
     }
   }
