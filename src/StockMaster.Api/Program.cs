@@ -108,6 +108,12 @@ app.MapControllers();
 
 // await MigrateDatabase();
 
+// Configurar porta de execução
+var port = Environment.GetEnvironmentVariable("WEBSITES_PORT") ?? "8080";
+builder.WebHost.UseUrls($"http://*:{port}");
+
+app.MapGet("/", () => "API funcionando!");
+
 app.Run();
 
 /*async Task MigrateDatabase()
